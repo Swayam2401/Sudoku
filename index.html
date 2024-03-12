@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <div class="navBar">
+        <h3><a href="https://en.wikipedia.org/wiki/Sudoku" target="main">Rules</a></h3>
+        <h2>Sudoku</h2>
+        <button id="solveBtn">solve now</button>
+    </div>
+    <div id="MainOuterBox">
+
+        <div class="SubMainBox">
+            <div class="innerBox">
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="0"></div>
+                    <div class="GrandChild" contenteditable="true" id="1"></div>
+                    <div class="GrandChild" contenteditable="true" id="2"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="9"></div>
+                    <div class="GrandChild" contenteditable="true" id="10"></div>
+                    <div class="GrandChild" contenteditable="true" id="11"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="18"></div>
+                    <div class="GrandChild" contenteditable="true" id="19"></div>
+                    <div class="GrandChild" contenteditable="true" id="20"></div>
+                </div>
+
+            </div>
+
+            <div class="innerBox">
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="3"></div>
+                    <div class="GrandChild" contenteditable="true" id="4"></div>
+                    <div class="GrandChild" contenteditable="true" id="5"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="12"></div>
+                    <div class="GrandChild" contenteditable="true" id="13"></div>
+                    <div class="GrandChild" contenteditable="true" id="14"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="21"></div>
+                    <div class="GrandChild" contenteditable="true" id="22"></div>
+                    <div class="GrandChild" contenteditable="true" id="23"></div>
+                </div>
+            </div>
+
+            <div class="innerBox">
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="6"></div>
+                    <div class="GrandChild" contenteditable="true" id="7"></div>
+                    <div class="GrandChild" contenteditable="true" id="8"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="15"></div>
+                    <div class="GrandChild" contenteditable="true" id="16"></div>
+                    <div class="GrandChild" contenteditable="true" id="17"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="24"></div>
+                    <div class="GrandChild" contenteditable="true" id="25"></div>
+                    <div class="GrandChild" contenteditable="true" id="26"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="SubMainBox">
+            <div class="innerBox">
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="27"></div>
+                    <div class="GrandChild" contenteditable="true" id="28"></div>
+                    <div class="GrandChild" contenteditable="true" id="29"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="36"></div>
+                    <div class="GrandChild" contenteditable="true" id="37"></div>
+                    <div class="GrandChild" contenteditable="true" id="38"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="45"></div>
+                    <div class="GrandChild" contenteditable="true" id="46"></div>
+                    <div class="GrandChild" contenteditable="true" id="47"></div>
+                </div>
+
+            </div>
+
+            <div class="innerBox">
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="30"></div>
+                    <div class="GrandChild" contenteditable="true" id="31"></div>
+                    <div class="GrandChild" contenteditable="true" id="32"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="39"></div>
+                    <div class="GrandChild" contenteditable="true" id="40"></div>
+                    <div class="GrandChild" contenteditable="true" id="41"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="48"></div>
+                    <div class="GrandChild" contenteditable="true" id="49"></div>
+                    <div class="GrandChild" contenteditable="true" id="50"></div>
+                </div>
+            </div>
+
+            <div class="innerBox">
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="33"></div>
+                    <div class="GrandChild" contenteditable="true" id="34"></div>
+                    <div class="GrandChild" contenteditable="true" id="35"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="42"></div>
+                    <div class="GrandChild" contenteditable="true" id="43"></div>
+                    <div class="GrandChild" contenteditable="true" id="44"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="51"></div>
+                    <div class="GrandChild" contenteditable="true" id="52"></div>
+                    <div class="GrandChild" contenteditable="true" id="53"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="SubMainBox">
+            <div class="innerBox">
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="54"></div>
+                    <div class="GrandChild" contenteditable="true" id="55"></div>
+                    <div class="GrandChild" contenteditable="true" id="56"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="63"></div>
+                    <div class="GrandChild" contenteditable="true" id="64"></div>
+                    <div class="GrandChild" contenteditable="true" id="65"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="72"></div>
+                    <div class="GrandChild" contenteditable="true" id="73"></div>
+                    <div class="GrandChild" contenteditable="true" id="74"></div>
+                </div>
+
+            </div>
+
+            <div class="innerBox">
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="57"></div>
+                    <div class="GrandChild" contenteditable="true" id="58"></div>
+                    <div class="GrandChild" contenteditable="true" id="59"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="66"></div>
+                    <div class="GrandChild" contenteditable="true" id="67"></div>
+                    <div class="GrandChild" contenteditable="true" id="68"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="75"></div>
+                    <div class="GrandChild" contenteditable="true" id="76"></div>
+                    <div class="GrandChild" contenteditable="true" id="77"></div>
+                </div>
+            </div>
+
+            <div class="innerBox">
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="60"></div>
+                    <div class="GrandChild" contenteditable="true" id="61"></div>
+                    <div class="GrandChild" contenteditable="true" id="62"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="69"></div>
+                    <div class="GrandChild" contenteditable="true" id="70"></div>
+                    <div class="GrandChild" contenteditable="true" id="71"></div>
+                </div>
+
+                <div class="Child">
+                    <div class="GrandChild" contenteditable="true" id="78"></div>
+                    <div class="GrandChild" contenteditable="true" id="79"></div>
+                    <div class="GrandChild" contenteditable="true" id="80"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script src="SudokuLogics/EventManager.js"></script>
+<script src="SudokuLogics/SudokuLogic.js"></script>
+<script src="SudokuLogics/SudokuSolver.js"></script>
+
+</html>
